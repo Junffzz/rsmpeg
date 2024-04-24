@@ -179,3 +179,18 @@ Thanks for your contributions!
 + [@imxood](https://github.com/imxood)
 + [@FallingSnow](https://github.com/FallingSnow)
 + [@Jamyw7g](https://github.com/Jamyw7g)
+
+
+# 更新fork的原始分支
+```
+1.设置上游仓库
+git remote add upstream https://github.com/larksuite/rsmpeg.git
+2.获取上游仓库的分支列表
+git fetch upstream
+3.切换到你的主分支
+git checkout master
+4.合并上游主分支的更改
+git merge upstream/master
+5.推送到你的 fork
+git push origin master
+```
