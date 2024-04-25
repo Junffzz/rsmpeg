@@ -4,7 +4,16 @@
 
 /// Raw and unsafe FFmpeg functions, structs and constants,
 // pub use rusty_ffmpeg::ffi;
-pub use rusty_ffmpeg::avutil::{_avutil::*, common::*, error::*, pixfmt::*, rational::*};
+#[allow(
+    non_snake_case,
+    non_camel_case_types,
+    non_upper_case_globals,
+    improper_ctypes,
+    clippy::all
+)]
+pub mod raw_ffi {
+    pub use rusty_ffmpeg::avutil::{_avutil::*, common::*, error::*, pixfmt::*, rational::*};
+}
 
 #[macro_use]
 mod macros;
