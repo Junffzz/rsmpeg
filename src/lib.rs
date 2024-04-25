@@ -3,17 +3,7 @@
 #![allow(clippy::upper_case_acronyms)]
 
 /// Raw and unsafe FFmpeg functions, structs and constants,
-// pub use rusty_ffmpeg::ffi;
-#[allow(
-    non_snake_case,
-    non_camel_case_types,
-    non_upper_case_globals,
-    improper_ctypes,
-    clippy::all
-)]
-pub mod raw_ffi {
-    pub use rusty_ffmpeg::avutil::{_avutil::*, common::*, error::*, pixfmt::*, rational::*};
-}
+pub use rusty_ffmpeg::ffi;
 
 #[macro_use]
 mod macros;
